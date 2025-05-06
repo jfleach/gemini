@@ -16,7 +16,7 @@ class GeminiContent:
         model="gemini-2.0-flash",
         contents=prompt,
     )
-    print(response.text)
+    print(response.text) # noqa
 
 if __name__ == "__main__":
     content = GeminiContent()

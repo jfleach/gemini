@@ -23,13 +23,13 @@ class GeminiImage:
         ),
     )
 
-    # TODO: Check for NoneType when it fails
+    # TODO: Check for NoneType when it fails # noqa
     for part in response.candidates[0].content.parts:
         if part.text is not None:
           print(part.text)
         elif part.inline_data is not None:
             image = Image.open(BytesIO(part.inline_data.data))
-            # TODO: Save with timestamp
+            # TODO: Save with timestamp # noqa
             image.save("gemini-native-image.png")
             image.show()
 
