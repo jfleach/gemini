@@ -1,0 +1,4 @@
+[tool.ruff.lint]
+# Enable all rules
+select = ["ALL"]
+
