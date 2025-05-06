@@ -28,7 +28,7 @@ class GeminiImage:
           print(part.text) # noqa: T201
         elif part.inline_data is not None:
             image = Image.open(BytesIO(part.inline_data.data))
-            # TODO: Save with timestamp # noqa: FIX002,TD003,TD002
+            # TODO: Save with timestamp # noqa: FIX002 TD003 TD002
             image.save("gemini-native-image.png")
             image.show()
 
