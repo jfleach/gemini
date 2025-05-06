@@ -1,4 +1,6 @@
 .env
 .ruff_cache
 ruff.toml
+__pycache__/
+*.pyc
 venv/

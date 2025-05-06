@@ -25,6 +25,14 @@ $ python3 generate_content.py
 $ python3 generate_image.py
 ```
 
+## Running the Tests
+
+Issue the following commands to run the unit tests.
+
+```bash
+$ pytest
+```
+
 ## References
 
 [Gemini Developer API](https://ai.google.dev/gemini-api/docs)
