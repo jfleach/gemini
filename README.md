@@ -13,6 +13,7 @@ Issue the following commands to setup the virtual environment and install the re
 ```bash
 $ python3 -m venv venv
 $ python3 pip3 install -r requirements.txt
+$ source venv/bin/activate
 ```
 
 ## Running the Examples
