@@ -16,9 +16,10 @@ class GeminiContent:
         model="gemini-2.0-flash",
         contents=prompt,
     )
-    print(response.text) # noqa: T201
+    return response.text
+
 
 if __name__ == "__main__":
     content = GeminiContent()
-    prompt = "lynx point siamese cat"
+    prompt = "Siamese Cat"
     content.generate_content(prompt)
