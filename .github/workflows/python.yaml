@@ -1,4 +1,4 @@
-name: Python
+name: Python Build
 
 on:
   [ push, pull_request ]
@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - name: checkout repo content
+      - name: Checkout repository content
         uses: actions/checkout@v2
-      - name: setup python
+      - name: Setup python
         uses: actions/setup-python@v2
         with:
           python-version: "3.13.3"

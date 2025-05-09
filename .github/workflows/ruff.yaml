@@ -1,4 +1,4 @@
-name: Ruff
+name: Ruff Linter
 on:
   [ push, pull_request ]
 permissions:
