@@ -4,7 +4,7 @@ This repository contains sample modules to interact with Google's Gemini AI.
 
 ## API Key Setup
 
-Generate a Gemini API key from the [Google AI Studio](https://aistudio.google.com) and add `GEMINI_API_KEY=YOUR_API_KEY` to the `.env` file in the root directory.
+Generate a Gemini API key from the [Google AI Studio](https://aistudio.google.com) and add `GEMINI_API_KEY=YOUR_API_KEY` to the environment.
 
 ## Virtual Environment Setup and Requirements Installation
 
