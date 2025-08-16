@@ -27,6 +27,6 @@ class GeminiVideo:
 
 if __name__ == "__main__":
     video = GeminiVideo()
-    prompt = "siamese cat meowing"
+    prompt = "siamese_cat"
     video_file_name = "siamese_cat.mp4"
     video.generate_video(prompt, video_file_name)
