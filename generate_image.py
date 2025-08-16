@@ -40,6 +40,6 @@ class GeminiImage:
 
 if __name__ == "__main__":
     image = GeminiImage()
-    prompt = "Siamese Cat"
+    prompt = "cat"
     image_file_name = "siamese_cat.png"
     image.generate_image(prompt, image_file_name)

@@ -6,8 +6,10 @@ from pathlib import Path
 
 from generate_content import GeminiContent
 from generate_image import GeminiImage
+from generate_video import GeminiVideo
 
 FILE_NAME = "siamese_cat.png"
+VIDEO_FILE_NAME = "siamese_cat.mp4"
 PROMPT = "Siamese Cat"
 
 
@@ -25,3 +27,12 @@ def test_image() -> None:
     assert "Siamese" in image_text
     assert Path(FILE_NAME).exists()
     Path(FILE_NAME).unlink()
+
+
+def test_video() -> None:
+    """Tests that the video has been generated."""
+    gemini_image = GeminiVideo()
+    video_file = gemini_image.generate_video(PROMPT, FILE_NAME)
+    assert "Siamese" in video_file
+    assert Path(VIDEO_FILE_NAME).exists()
+    Path(VIDEO_FILE_NAME).unlink()

@@ -23,6 +23,7 @@ Issue the following commands to run the examples.
 ```bash
 $ python3 generate_content.py
 $ python3 generate_image.py
+$ python3 generate_video.py
 ```
 
 ## Running the Tests
